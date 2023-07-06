@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css" />
+  <title>pattern generator</title>
+</head>
+<body>
+  <div class="col">
+   <div class="controls">
+     <h1>patterns generator</h1>
+     <h3>options</h3>
+     <div class="controls__group">
+      <label for="#angle">angle</label>
+      <input type="range" min="5" max="85" id="angle" data-input="range">
+     </div>
+     <div class="controls__group">
+      <label for="#thickness">stripe thickness</label>
+      <input type="range" min="2" max="120" step="1" id="thickness" data-input="thickness" value="30">
+     </div>
+     <div class="controls__group">
+      <label for="#width">width</label>
+      <input type="range" min="10" max="200"  step="1" id="width" data-input="width" value="100">
+     </div>
+     <div class="controls__group">
+      <label for="#color1">primary color</label>
+      <input type="range" min="0" max="360" step="1" id="color1" data-input="color1" value="100">
+     </div>
+     <div class="controls__group">
+      <label for="#color1">contrast</label>
+      <input type="range" min="50" max="90" step="1" id="contrast" data-input="contrast">
+     </div>
+     <h3>css output</h3>
+     <div class="css" data-output></div>
+   </div>
+  </div>
+  <div class="bg" data-bg></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.19/lodash.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
